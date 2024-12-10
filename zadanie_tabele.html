@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="zadanie, tabele" />
+	<meta name="description" content="scalanie tabel" />
+	<meta name="author" content="Michał Rybok" />
+	<meta name="robots" content="all" />
+	
+	<style>
+        .main{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+		#ciemny_zielony{
+            background-color: #3cc22a;
+        }
+        #zielony{
+            background-color: #67ee55;
+        }
+        #jasny_zielony{
+            background-color: #98fa8b;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 400px;
+            height: 25px;
+        }
+        th{
+            background-color:#33d4ff;
+            width: 30px; 
+			height: 30px;;
+        }
+        td{
+            width: 50px; 
+			height: 40px;
+        }
+    </style>
+	
+</head>
+
+<body>
+<div class="main">
+	<div class="tabele">
+		<h1>Tabela 1 - Podstawowa</h1>
+		<table>
+			<tr>
+				<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+			</tr>
+			<tr>
+				<th>2</th><td>a</td><td id="jasny_zielony">b</td><td id="jasny_zielony">c</td><td>d</td><td>e</td>
+			</tr>
+			<tr>
+				<th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td id="zielony">j</td>
+			</tr>
+			<tr>
+				<th>4</th><td>k</td><td>l</td><td>m</td><td>n</td><td id="zielony">o</td>
+			</tr>
+			<tr>
+				<th>5</th><td id="ciemny_zielony">p</td><td id="ciemny_zielony">q</td><td id="ciemny_zielony">r</td><td>s</td><td>t</td>
+			</tr>
+			<tr>
+				<th>6</th><td id="ciemny_zielony">u</td><td id="ciemny_zielony">v</td><td id="ciemny_zielony">w</td><td>y</td><td>z</td>
+			</tr>
+		</table>
+		<h1>Tabela 2 - Tabela scalona</h1>
+		<table>
+			<tr>
+				<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+			</tr>
+			<tr>
+				<th>2</th><td>a</td><td id="jasny_zielony" colspan="2">b, c</td><td>d</td><td>e</td>
+			</tr>
+			<tr>
+				<th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td id="zielony"rowspan="2">j, o</td>
+			</tr>
+			<tr>
+				<th>4</th><td>k</td><td>l</td><td>m</td><td>n</td>
+			</tr>
+			<tr>
+				<th>5</th><td id="ciemny_zielony" colspan="3" rowspan="2">p, q, r, u, v, w</td><td>s</td><td>t</td>
+			</tr>
+			<tr>
+				<th>6</th><td>y</td><td>z</td>
+			</tr>
+		</table>
+		<h1>Tabela 3 - Tabela Inicjały</h1>
+		<table>
+			<tr>
+				<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+			</tr>
+			<tr>
+				<th>2</th><td>a</td><td>b</td><td id="jasny_zielony">c</td><td>d</td><td>e</td>
+			</tr>
+			<tr>
+				<th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td id="zielony">j</td>
+			</tr>
+			<tr>
+				<th>4</th><td>k</td><td>l</td><td id="zielony" colspan="1" rowspan="2">M R</td><td>n</td><td id="zielony">o</td>
+			</tr>
+			<tr>
+				<th>5</th><td id="ciemny_zielony">p</td><td id="ciemny_zielony">q</td><td>s</td><td>t</td>
+			</tr>
+			<tr>
+				<th>6</th><td id="ciemny_zielony">u</td><td id="ciemny_zielony">v</td><td id="ciemny_zielony">w</td><td>y</td><td>z</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>
