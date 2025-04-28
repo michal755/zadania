@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta name="keywords" content="style" />
+	<meta name="description" content="Arkusze stylów" />
+	<meta name="author" content="Michał Rybok" />
+	<meta name="robots" content="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arkusze stylów</title>
+	
+	  <style>
+        .pckziu{
+            list-style-type: upper-roman;
+            color: red;
+        }
+        .technikum{
+            list-style-type: lower-alpha;
+            color: green;
+        }
+        .klasa{
+            list-style-type: square;
+            color: orange;
+        }
+        .zawodowa{
+            list-style-type: circle;
+            color: blue;
+        }
+    </style>
+	
+</head>
+
+<body>
+	<ol>
+        <li>Powiatowe Centrum Kształcenia Zawodowego i Ustawicznego</li>
+			<ol class="pckziu">
+				<li>Technikum</li>
+					<ol class="technikum" reversed>
+						<li>Technikum Gastronomiczne</li>
+						<li>Technikum Hotelarskie</li>
+						<li>Technikum Informatyczne</li>
+							<ul class="klasa">
+								<li>Klasa 1 K</li>
+								<li>Klasa 2 K</li>
+								<li>Klasa 3 K</li>
+								<li>Klasa 4 K</li>
+							</ul>
+						<li>Technikum Ekonomiczne</li>
+					</ol>
+				<li>Szkoła Branżowa
+					<ul class="zawodowa">
+					<li>I stopnia</li>
+					<li>II stopnia</li>
+					</ul>
+				</li>
+			</ol>
+	</ol>
+</body>
+
+</html>
